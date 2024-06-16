@@ -1,0 +1,14 @@
+<div class="index">
+
+    <h2>Bem vindo!</h2>
+    <h1>Veja os cadastros listados abaixo:</h1>
+
+    <div class="cadlist">
+        {{#each cadastros}}
+            <div class="cad">
+                <h2 class="username">Nome: {{name}}</h2>
+                <h3 class="userage">Idade: {{age}}</h3>
+            </div>
+        {{/each}}
+    </div>
+</div>
