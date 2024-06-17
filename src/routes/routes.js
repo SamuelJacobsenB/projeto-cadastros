@@ -27,7 +27,11 @@ router.get('/create',(req, res)=>{
 });
 
 router.get('/search',(req, res)=>{
-    res.render('pages/search');
+    UserSchema.find().then((cadastros)=>{
+        res.render('pages/search',{cadastros: cadastros});
+    }).catch((err)=>{
+        console.log(err);
+    });
 });
 
 router.post('/create/new',(req, res)=>{

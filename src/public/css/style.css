@@ -137,3 +137,27 @@ div.create button:hover {
     color: rgb(164, 164, 164);
     transition: 0.4s;
 }
+
+/* ----------------- */
+
+div.search {
+    color: lightgreen;
+    margin: auto;
+}
+
+div.search > h1 {
+    display: inline-block;
+    font-size: 50px;
+    padding: 20px;
+}
+
+div.search > input {
+    font-size: 20px;
+    color: lightgreen;
+    height: 50px;
+    width: 40vw;
+    padding: 12px;
+    margin-top: 5px;
+    border: 3px solid lightgreen;
+    border-radius: 25px;
+}

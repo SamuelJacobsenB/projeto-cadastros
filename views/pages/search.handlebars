@@ -1,0 +1,13 @@
+<div class="search">
+    <h1>Pesquise aqui:</h1>
+    <input type="search" name="search" id="search" placeholder="Pesquisar">
+    
+    <div class="cadlist">
+        {{#each cadastros}}
+            <div class="cad" id="{{name}}">
+                <h2 class="username">Nome: {{name}}</h2>
+                <h3 class="userage">Idade: {{age}}</h3>
+            </div>
+        {{/each}}
+    </div>
+</div>
