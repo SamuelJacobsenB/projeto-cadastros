@@ -56,7 +56,7 @@ div.conteudo {
     display: block;
     margin: auto;
     width: calc(98vw - 500px);
-    height: 100vh;
+    height: 300vh;
     float: right;
 }
 
@@ -231,4 +231,94 @@ div.search > input {
 .btndelete:hover {
     background-color: rgb(255, 11, 11);
     transition: 0.4s;
+}
+
+
+
+@media screen and (max-width: 1360px) {
+    
+    div.navbar {
+        max-width: 280px;
+    }
+    
+    nav > a {
+        margin: 180px 60px;
+    }
+
+    div.conteudo {
+        width: calc(98vw - 280px);
+    }
+    
+    /* ----------------- */
+    
+    
+    div.index > h2 {
+        padding: 25px;
+    }
+    
+    div.index > h1 {
+        font-size: 30px;
+    }
+    
+    div.cad {
+        min-width: 280px;
+        min-height: 80px;
+        margin: 15px;
+    }
+    
+    div.cad > h2 {
+        font-size: 20px;
+        padding: 8px;
+    }
+    
+    div.cad > h3 {
+        font-size: 18px;
+        padding: 12px 10px;
+    }
+    
+    /* ----------------- */
+
+    div.create_edit {
+        margin: 0px;
+    }
+    
+    div.create_edit > h1 {
+        font-size: 30px;
+        padding: 10px;
+    }
+    
+    div.create_edit > form {
+        margin-top: 40px;
+    }
+    
+    div.create_edit label {
+        font-size: 22px;
+        padding: 10px;
+        margin: 20px 5px;
+    }
+    
+    div.create_edit input {
+        font-size: 18px;
+        width: 40vw;
+    }
+    
+    div.create_edit button {
+        width: 200px;
+        margin: 40px;
+    }
+    
+    /* ----------------- */
+    
+    div.search {
+        margin: auto;
+    }
+
+    div.search > h1 {
+        font-size: 40px;
+        padding: 15px;
+    }
+    
+    div.search h4 {
+        font-size: 22px;
+    }
 }
