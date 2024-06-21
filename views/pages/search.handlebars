@@ -8,7 +8,13 @@
                 <h2 class="username">Nome: {{name}}</h2>
                 <h3 class="userage">Idade: {{age}}</h3>
                 <a href="/main/edit/{{_id}}" class="editcad"><button class="btnedit">Editar cadastro</button></a>
+                <form action="/main/delete" method="post" class="deletecad">
+                    <input type="hidden" name="id" value="{{_id}}">
+                    <button class="btndelete" type="submit">Deletar cadastro</button>
+                </form>
             </div>
+        {{else}}
+            <h4>Nenhum cadastro registrado</h4>
         {{/each}}
     </div>
 </div>

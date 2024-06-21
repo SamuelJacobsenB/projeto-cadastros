@@ -34,7 +34,7 @@ router.post('/create/new',(req, res)=>{
         erros.push({message: 'Nome inválido'});
     };
 
-    if(!req.body.age || req.body.age == null || req.body.age == undefined || req.body.age == ''){
+    if(!req.body.age || req.body.age == null || req.body.age == undefined || req.body.age == '' || req.body.age < 1){
         erros.push({message: 'Idade inválido'});
     };
 
@@ -80,7 +80,7 @@ router.post('/edit',(req,res)=>{
         erros.push({message: 'Nome inválido'});
     };
 
-    if(!req.body.age || req.body.age == null || req.body.age == undefined || req.body.age == ''){
+    if(!req.body.age || req.body.age == null || req.body.age == undefined || req.body.age == '' || req.body.age < 1){
         erros.push({message: 'Idade inválido'});
     };
 
@@ -104,6 +104,16 @@ router.post('/edit',(req,res)=>{
             req.flash('error_msg','Usuário não encontrado');
         });
     };
+});
+
+router.post('/delete',(req,res)=>{
+    UserSchema.deleteOne({_id: req.body.id}).then(()=>{
+        req.flash('success_msg','Cadastro deletado com sucesso');
+        res.redirect('/main/search');
+    }).catch((err)=>{
+        req.flash('error_msg','Houve um erro ao deletar cadastro');
+        res.redirect('/main/search');
+    });
 });
 
 //---------------------------------
