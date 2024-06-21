@@ -4,6 +4,26 @@
     margin: 0px;
 }
 
+div.msg {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 45vw;
+    height: 25px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: rgba(39, 255, 39, 0.414);
+}
+
+.error {
+    background-color: rgba(255, 30, 30, 0.615);
+}
+
 div.navbar {
     display: block;
     background-color: lightgreen;
@@ -64,7 +84,7 @@ div.cad {
     background-color: lightgreen;
     color: white;
     width: 300px;
-    height: 100px;
+    min-height: 100px;
     padding: 10px;
     margin: 30px;
     border: 1px solid rgb(113, 255, 113);
@@ -83,7 +103,7 @@ div.cad > h3 {
 
 /* ----------------- */
 
-div.create {
+div.create_edit {
     display: block;
     color: lightgreen;
     width: calc(90vw - 500px);
@@ -91,36 +111,36 @@ div.create {
     margin: auto;
 }
 
-div.create > h1 {
+div.create_edit > h1 {
     text-align: center;
     font-size: 45px;
     padding: 30px;
     margin-top: 100px;
 }
 
-div.create > form {
+div.create_edit > form {
     margin: auto;
     padding: 40px;
     margin-top: 50px;
 }
 
-div.create label {
+div.create_edit label {
     font-size: 24px;
     padding: 30px;
     margin: 30px 10px;
 }
 
-div.create input {
+div.create_edit input {
     font-size: 20px;
     color: lightgreen;
     width: 40vw;
     padding: 10px;
     margin-top: 20px;
-    border: 1px solid lightgreen;
+    border: 2px solid lightgreen;
     border-radius: 5px;
 }
 
-div.create button {
+div.create_edit button {
     background-color: lightgreen;
     font-size: 20px;
     color: white;
@@ -129,10 +149,11 @@ div.create button {
     margin: 50px;
     border: 1px solid rgb(100, 255, 100);
     border-radius: 8px;
+    cursor: pointer;
     transition: 0.4s;
 }
 
-div.create button:hover {
+div.create_edit button:hover {
     background-color: rgb(123, 255, 123);
     color: rgb(164, 164, 164);
     transition: 0.4s;
@@ -160,4 +181,25 @@ div.search > input {
     margin-top: 5px;
     border: 3px solid lightgreen;
     border-radius: 25px;
+}
+
+.editcad {
+    cursor: pointer;
+}
+
+.btnedit {
+    background-color: rgb(131, 207, 255);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btnedit:hover {
+    background-color: rgb(68, 183, 255);
+    transition: 0.4s;
 }
